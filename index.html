@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rick's Christmas List 🎄</title>
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      background: url('https://images.unsplash.com/photo-1607082349566-187e8c0a6f3a') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+    }
+    h1 {
+      font-size: 3em;
+      color: #ffdf00;
+      text-shadow: 2px 2px 5px #000;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 30px auto;
+      max-width: 600px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+    }
+    li {
+      margin: 15px 0;
+      font-size: 1.5em;
+    }
+    a {
+      text-decoration: none;
+      color: #00ff99;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #ff4444;
+    }
+
+    /* Snowfall effect */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      color: white;
+      font-size: 1.5em;
+      animation: fall linear infinite;
+    }
+    @keyframes fall {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(100vh); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🎅 Ricky's Christmas Wish List 🎁</h1>
+    <p>Click below to see what I’d love this year!</p>
+  </header>
+
+  <ul>
+    <li> <a href="https://wooting.io/wooting-80he">keyboard</a></li>
+    <li> <a href="https://www.amazon.com/HUANUO-Dual-Monitor-Stand-Adjustable/dp/B0CTMHHJJC/ref=sr_1_9?crid=37WMDHAE6GPYW&dib=eyJ2IjoiMSJ9.6denMT9qU5umFWzOndP68FHsFqGtEFD9Bp7YQyth0HSY3v47j0LNcrwl6BCcdjtwP2RXnJSxY0UvXASs55zZiPwJ0mConRcSxTxQPUGeCJlCQrNj0Fi_Hcj5PdxiL2gQh-qPGxBBKn70ddvEA4L9xrLr8iU0s5h9M_cGI1SkrPXHnDzjO7kmdiEmxFx9VugR-NAhEBIEavjCrIA-OOK2K7z90hWmjCeeQ2si9YEahYA.fRAroP4XL_PPHog2xDQ4lIZuVwAGIVXP6AIcx6K1sgY&dib_tag=se&keywords=monitor%2Barm&qid=1765697144&sprefix=monitro%2Bar%2Caps%2C156&sr=8-9&th=1">monitor arms</a></li>
+    <li> <a href="https://www.ikea.com/us/en/p/alex-drawer-unit-white-00473546/">ikea drawer</a></li>
+    <li> <a href="data:image/jpeg;base64,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"> worker </a></li>
+<li> <a href="https://www.amazon.com/FIFINE-Microphone-Headphone-Voice-Over-Streaming/dp/B0DLGBGH3R/ref=sr_1_9?crid=39J5E741AMNBU&dib=eyJ2IjoiMSJ9.U0h5lBd3r7463M5McTRWBBlEN3B7iXBUm-QZovLoE-SdlCiShWZyhN27WR1OXupzVcP9dckuzE7Q-ZP5A45omHYp6K7m2ev06Qq6hDcbSHt9yh5gmStcdkkg6UhaqnxDnlnhFFdZ6Tf8NlyLH93gxFIspoiSd7-GOHfppeaEXdjd7RAKV0kIHqlL6ycu6k6YyfiK07qhXoRbY3PkN3f8RhqwKAyOWdAVTszrrZnfLn3n1bJRiYb6xVbgk2Zj-c1q3xgRtoQcZ4BQ7nvUr54eAwPjgCPhyytBVDFIThq0r0E.3kP5GyJzUJ-n2GZSqrK0gI7Soceg_FYVp38fMCzi4oQ&dib_tag=se&keywords=fifine%2Bmicrophone&qid=1765697612&sprefix=fifine%2Bmicrrophon%2Caps%2C206&sr=8-9&th=1">charger</a></li>
+  </ul>
+<!-- Snowflakes -->
+  <div class="snowflake" style="left:10%; animation-duration:8s;">❄️</div>
+  <div class="snowflake" style="left:30%; animation-duration:10s;">❄️</div>
+  <div class="snowflake" style="left:50%; animation-duration:12s;">❄️</div>
+  <div class="snowflake" style="left:70%; animation-duration:9s;">❄️</div>
+  <div class="snowflake" style="left:90%; animation-duration:11s;">❄️</div>
+</body>
+</html>
